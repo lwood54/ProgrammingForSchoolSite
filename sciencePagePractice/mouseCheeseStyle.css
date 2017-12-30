@@ -1,0 +1,28 @@
+#mouseDiv {
+  border: .5px solid blue;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  top: 100px;
+  left: 100px;
+}
+
+#emptyDiv {
+  border: .5px solid gray;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  left: 500px;
+  top: 100px;
+}
+
+#mouse {
+  height: 210px;
+  padding: 2px;
+
+}
+
+#cheese {
+  height: 200px;
+  left: 200px;
+}
