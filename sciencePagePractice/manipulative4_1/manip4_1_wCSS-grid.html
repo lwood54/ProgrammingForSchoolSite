@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="manip4_1_wCSS-grid.css">
+    <title>Manipulative 4.1 w CSS Grid</title>
+  </head>
+  <body>
+    <h1>Digital Manipulative with Plain JavaScript and using CSS Grid</h1>
+      <div class="section1">
+        <div class="col1">
+          <h4>Natural Selection</h4>
+          <div class="row1 dropZone" id="natSelTarget1"></div>
+          <div class="row2 dropZone" id="natSelTarget2"></div>
+          <div class="row3 dropZone" id="natSelTarget3" ondrop='drop(event)' ondragover='allowDrop(event)'></div>
+        </div>
+        <div class="col2">
+          <h4>Adaptation</h4>
+          <div class="row1 dropZone" id="adaptTarget1"></div>
+          <div class="row2 dropZone" id="adaptTarget2"></div>
+          <div class="row3 dropZone" id="adaptTarget3"></div>
+        </div>
+        <div class="col3">
+          <h4>Selective Breeding</h4>
+          <div class="row1 dropZone" id="selBrTarget1"></div>
+          <div class="row2 dropZone" id="selBrTarget2"></div>
+          <div class="row3 dropZone" id="selBrTarget3"></div>
+        </div>
+        <div class="col4">
+          <h4>Gills</h4>
+          <div class="row1 dropZone" id="gillsTarget1"></div>
+          <div class="row2 dropZone" id="gillsTarget2"></div>
+          <div class="row3 dropZone" id="gillsTarget3"></div>
+        </div>
+        <div class="col5">
+          <h4>Xylem</h4>
+          <div class="row1 dropZone" id="xylemTarget1"></div>
+          <div class="row2 dropZone" id="xylemTarget2"></div>
+          <div class="row3 dropZone" id="xylemTarget3"></div>
+        </div>
+      </div> <!-- END OF SECTION 1 CONTAINER -->
+
+
+      <div id="section1ChoicesContainer">
+
+
+        <img class="section1Choices" id="adapt1" src="images/adaptationGif.gif" alt="">
+        <div class="section1Choices textAnswers" id="adapt2">
+          <p>Ex. Birds now have hollow bones that enable flight, humans walk on 2 feet, snakes have venom.</p>
+        </div>
+        <div class="section1Choices textAnswers" id="adapt3">
+          <p>A change in species by which it becomes better suited to survive its environment.</p>
+        </div>
+
+
+        <img class="section1Choices" id="natSel1" src="images/naturalSelectionGif.gif" alt="">
+        <div class="section1Choices textAnswers" id="natSel2">
+          <p>Ex. Over time, tigers that were better camouflaged could catch prey more easily.</p>
+        </div>
+        <div class="section1Choices textAnswers" id="natSel3">
+          <p>The process where organisms that are better suited to their environment tend to survive and pass on their genes.</p>
+        </div>
+
+
+        <img class="section1Choices" id="selBr1" src="images/selectiveBreedingGif.gif" alt="">
+        <div class="section1Choices textAnswers" id="selBr2">
+          <p>Ex. Your pet dog is no longer like a wolf, but has the traits that were chosen by a breeder.</p>
+        </div>
+        <div class="section1Choices textAnswers" id="selBr3">
+          <p>Humans select the genes most desirable for our purposes and choose which individuals will pass on their genes.</p>
+        </div>
+
+
+        <img class="section1Choices" id="gills1" src="images/gillsGif.gif" alt="">
+        <div class="section1Choices textAnswers" id="gills2">
+          <p>Ex. Found in fish and sharks internally, but even some salamanders have thes externally.</p>
+        </div>
+        <div class="section1Choices textAnswers" id="gills3">
+          <p>The respiratory organs of fish and some amphibians in which oxygen is extracted from water.</p>
+        </div>
+
+
+        <img class="section1Choices" id="xylem1" src="images/xylemGif.gif" alt="">
+        <div class="section1Choices textAnswers" id="xylem2">
+          <p>Hint: Functions in a similar manner to blood vessels in people.</p>
+        </div>
+        <div class="section1Choices textAnswers" id="xylem3">
+          <p>The vessels in plants that move water and dissolved nutrients upward from the root.</p>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+      <script src="manip4_1_wCSS-grid.js"></script>
+  </body>
+</html>
