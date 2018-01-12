@@ -1,21 +1,3 @@
-// var cardArray = [
-//   $("#adapt1"),
-//   $("#adapt2"),
-//   $("#adapt3"),
-//   $("#natSel1"),
-//   $("#natSel2"),
-//   $("#natSel3"),
-//   $("#selBr1"),
-//   $("#selBr2"),
-//   $("#selBr3"),
-//   $("#gills1"),
-//   $("#gills2"),
-//   $("#gills3"),
-//   $("#xylem1"),
-//   $("#xylem2"),
-//   $("#xylem3")
-// ];
-
 var cardArray = [];
 function addToCardArray(collectionObj) {
   for(var i = 0; i < collectionObj.length; i++) {
@@ -84,11 +66,20 @@ function updateScore() {
     scoreWordEl.innerHTML = "Score";
     scoreNumberEl.innerHTML = percentRight + "%";
     scoreNumberEl.style.paddingLeft = "15%";
+    var button = document.createElement("button");
+    var section1Div = document.getElementById("section1ChoicesContainer");
     if (percentRight >= 70) {
-      alert("You are ready to move on." +
-        "This will be replaced with a link to the next 5 vocabulary terms.")
+      alert("link in div to next challenge")
+      // button.innerHTML = "NEXT CHALLENGE";
+      // section1Div.appendChild(button);
+      // button.addEventListener ("click", function() {
+      //   alert("went to next challenge");
     } else {
-      alert("Try again until you get above 70%!");
+      alert("link in div to refresh page")
+      // button.innerHTML = "TRY AGAIN";
+      // section1Div.appendChild(button);
+      // button.addEventListener ("click", function() {
+      //   alert("refreshed the page");
     }
   }
 }
