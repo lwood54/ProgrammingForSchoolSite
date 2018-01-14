@@ -60,26 +60,37 @@ function updateScore() {
   scoreNumberEl = document.getElementById("number");
   scoreWordEl = document.getElementById("scoreWord");
   scoreNumberEl.innerHTML = redCount;
-  document.getElementById("score").innerHTML;
   var percentRight = Math.ceil((15 - redCount)/15 * 100);
   if(greenCount === 15) {
     scoreWordEl.innerHTML = "Score";
     scoreNumberEl.innerHTML = percentRight + "%";
     scoreNumberEl.style.paddingLeft = "15%";
-    var button = document.createElement("button");
-    var section1Div = document.getElementById("section1ChoicesContainer");
+    var section1ChoicesDiv = document.getElementById("section1ChoicesContainer");
+    var button = document.getElementById("nextButton");
+    var currentHref = window.location.href;
     if (percentRight >= 70) {
-      alert("link in div to next challenge")
-      // button.innerHTML = "NEXT CHALLENGE";
-      // section1Div.appendChild(button);
-      // button.addEventListener ("click", function() {
-      //   alert("went to next challenge");
+      button.style.visibility = "visible";
+      button.innerHTML = "NEXT CHALLENGE";
+      section1ChoicesDiv.appendChild(button);
+      section1ChoicesDiv.style.backgroundColor = "transparent";
+      button.addEventListener ("click", function() {
+        if (currentHref.includes("Sec_1")) {
+          // change to correct path when using Node.js and templates
+          // after other units are made, I'll need to create a way to auto link to "Sec_2" here
+          location.href = "/Users/lwood3499imac/Desktop/Programming/ProgrammingForSchoolSite/sciencePagePractice/manipulative4_1/manip4_1_Sec_2.html";
+        } else {
+          // If section 2, then go back to home screen to select from other manipulatives
+          location.href = "index.html";
+        }
+      });
     } else {
-      alert("link in div to refresh page")
-      // button.innerHTML = "TRY AGAIN";
-      // section1Div.appendChild(button);
-      // button.addEventListener ("click", function() {
-      //   alert("refreshed the page");
+      button.innerHTML = "TRY AGAIN";
+      section1ChoicesDiv.appendChild(button);
+      section1ChoicesDiv.style.backgroundColor = "transparent";
+      button.addEventListener ("click", function() {
+        // set new location to current window (should cause reload)
+        location.href = window.location.href;
+      });
     }
   }
 }

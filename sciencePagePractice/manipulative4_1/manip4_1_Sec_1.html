@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
     <link rel="stylesheet" href="digitalManipulative.css">
-    <title>Manip 4.1: Section 1</title>
+    <title>Manipulative 4.1: Section 1</title>
   </head>
   <body>
     <div class="pageTitle">
@@ -17,84 +17,86 @@
       <div class="section1">
         <div class="col1">
           <h4>Natural Selection</h4>
-          <div class="row1 dropZone" id="natSelTarget1"></div>
-          <div class="row2 dropZone" id="natSelTarget2"></div>
-          <div class="row3 dropZone" id="natSelTarget3"></div>
+          <div class="row1 dropZone targetCol1" id="targCol1Row1"></div>
+          <div class="row2 dropZone targetCol1" id="targCol1Row2"></div>
+          <div class="row3 dropZone targetCol1" id="targCol1Row3"></div>
         </div>
         <div class="col2">
           <h4>Adaptation</h4>
-          <div class="row1 dropZone" id="adaptTarget1"></div>
-          <div class="row2 dropZone" id="adaptTarget2"></div>
-          <div class="row3 dropZone" id="adaptTarget3"></div>
+          <div class="row1 dropZone targetCol2" id="targCol2Row1"></div>
+          <div class="row2 dropZone targetCol2" id="targCol2Row2"></div>
+          <div class="row3 dropZone targetCol2" id="targCol2Row3"></div>
         </div>
         <div class="col3">
           <h4>Selective Breeding</h4>
-          <div class="row1 dropZone" id="selBrTarget1"></div>
-          <div class="row2 dropZone" id="selBrTarget2"></div>
-          <div class="row3 dropZone" id="selBrTarget3"></div>
+          <div class="row1 dropZone targetCol3" id="targCol3Row1"></div>
+          <div class="row2 dropZone targetCol3" id="targCol3Row2"></div>
+          <div class="row3 dropZone targetCol3" id="targCol3Row3"></div>
         </div>
         <div class="col4">
           <h4>Gills</h4>
-          <div class="row1 dropZone" id="gillsTarget1"></div>
-          <div class="row2 dropZone" id="gillsTarget2"></div>
-          <div class="row3 dropZone" id="gillsTarget3"></div>
+          <div class="row1 dropZone targetCol4" id="targCol4Row1"></div>
+          <div class="row2 dropZone targetCol4" id="targCol4Row2"></div>
+          <div class="row3 dropZone targetCol4" id="targCol4Row3"></div>
         </div>
         <div class="col5">
           <h4>Xylem</h4>
-          <div class="row1 dropZone" id="xylemTarget1"></div>
-          <div class="row2 dropZone" id="xylemTarget2"></div>
-          <div class="row3 dropZone" id="xylemTarget3"></div>
+          <div class="row1 dropZone targetCol5" id="targCol5Row1"></div>
+          <div class="row2 dropZone targetCol5" id="targCol5Row2"></div>
+          <div class="row3 dropZone targetCol5" id="targCol5Row3"></div>
         </div>
       </div> <!-- END OF SECTION 1 GAME BOARD -->
 
       <div id="footer">
         <!-- ANSWER CHOICES SECTION -->
         <div id="section1ChoicesContainer">
-          <!-- ADAPTATION CHOICES -->
-          <img class="section1Choices" id="adapt1" src="images/adaptationGif.gif" alt="">
-          <div class="section1Choices textAnswers" id="adapt2">
-            <p>Ex. Birds now have hollow bones that enable flight, humans walk on 2 feet, snakes have venom.</p>
-          </div>
-          <div class="section1Choices textAnswers" id="adapt3">
-            <p>A change in species by which it becomes better suited to survive its environment.</p>
-          </div>
-
-          <!-- NATURAL SELECTION CHOICES -->
-          <img class="section1Choices" id="natSel1" src="images/naturalSelectionGif.gif" alt="">
-          <div class="section1Choices textAnswers" id="natSel2">
+          <!-- COLUMN 1 CHOICES -->
+          <img class="section1Choices forCol1" id="col1Choice1" src="images/naturalSelectionGif.gif" alt="">
+          <div class="section1Choices textAnswers forCol1" id="col1Choice2">
             <p>Ex. Over time, tigers that were better camouflaged could catch prey more easily.</p>
           </div>
-          <div class="section1Choices textAnswers" id="natSel3">
+          <div class="section1Choices textAnswers forCol1" id="col1Choice3">
             <p>The process where organisms that are better suited to their environment tend to survive and pass on their genes.</p>
           </div>
 
-          <!-- SELECTIVE BREEDING CHOICES -->
-          <img class="section1Choices" id="selBr1" src="images/selectiveBreedingGif.gif" alt="">
-          <div class="section1Choices textAnswers" id="selBr2">
+          <!-- COLUMN 2 CHOICES -->
+          <img class="section1Choices forCol2" id="col2Choice1" src="images/adaptationGif.gif" alt="">
+          <div class="section1Choices textAnswers forCol2" id="col2Choice2">
+            <p>Ex. Birds now have hollow bones that enable flight, humans walk on 2 feet, snakes have venom.</p>
+          </div>
+          <div class="section1Choices textAnswers forCol2" id="col2Choice3">
+            <p>A change in species by which it becomes better suited to survive its environment.</p>
+          </div>
+
+          <!-- COLUMN 3 CHOICES -->
+          <img class="section1Choices forCol3" id="col3Choice1" src="images/selectiveBreedingGif.gif" alt="">
+          <div class="section1Choices textAnswers forCol3" id="col3Choice2">
             <p>Ex. Your pet dog is no longer like a wolf, but has the traits that were chosen by a breeder.</p>
           </div>
-          <div class="section1Choices textAnswers" id="selBr3">
+          <div class="section1Choices textAnswers forCol3" id="col3Choice3">
             <p>Humans select the genes most desirable for our purposes and choose which individuals will pass on their genes.</p>
           </div>
 
-          <!-- GILLS CHOICES -->
-          <img class="section1Choices" id="gills1" src="images/gillsGif.gif" alt="">
-          <div class="section1Choices textAnswers" id="gills2">
-            <p>Ex. Found in fish and sharks internally, but even some salamanders have thes externally.</p>
+          <!-- COLUMN 4 CHOICES -->
+          <img class="section1Choices forCol4" id="col4Choice1" src="images/gillsGif.gif" alt="">
+          <div class="section1Choices textAnswers forCol4" id="col4Choice2">
+            <p>Ex. Found in fish and sharks internally, but even some salamanders have these externally.</p>
           </div>
-          <div class="section1Choices textAnswers" id="gills3">
+          <div class="section1Choices textAnswers forCol4" id="col4Choice3">
             <p>The respiratory organs of fish and some amphibians in which oxygen is extracted from water.</p>
           </div>
 
-          <!-- XYLEM CHOICES -->
-          <img class="section1Choices" id="xylem1" src="images/xylemGif.gif" alt="">
-          <div class="section1Choices textAnswers" id="xylem2">
+          <!-- COLUMN 5 CHOICES -->
+          <img class="section1Choices forCol5" id="col5Choice1" src="images/xylemGif.gif" alt="">
+          <div class="section1Choices textAnswers forCol5" id="col5Choice2">
             <p>Hint: Functions in a similar manner to blood vessels in people.</p>
           </div>
-          <div class="section1Choices textAnswers" id="xylem3">
+          <div class="section1Choices textAnswers forCol5" id="col5Choice3">
             <p>The vessels in plants that move water and dissolved nutrients upward from the root.</p>
           </div>
-        </div>
+
+          <button type="button" name="button" id="nextButton"></button>
+        </div> <!-- END OF SECTION1CHOICES CONTAINER-->
 
         <!-- SCORE KEEPING -->
         <div id="score">
@@ -102,13 +104,10 @@
           <p id="number">0</p>
         </div>
       </div> <!-- END OF FOOTER DIV -->
-    </div> <!-- END OF CONTAINER DIV -->
-
-
-
+    </div> <!-- END OF CONTAINER -->
 
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-      <script src="manip4_1_Sec_1.js"></script>
+      <script src="digitalManipulative.js"></script>
   </body>
 </html>
